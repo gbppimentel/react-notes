@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <nav className="Navbar">
-      <h1>Internship Notes</h1>
+      <h1>React Project: Notes</h1>
       <div className="links">
         <a href="/">Home</a>
         <a href="/create-entry" onClick={openModal}>
