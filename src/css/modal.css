@@ -1,0 +1,125 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  position: relative; /* Add this to make it a positioned container */
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+input,
+textarea {
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  border-color: gainsboro;
+  /* overflow: hidden; */
+}
+
+textarea {
+  height: 50%;
+  resize: none;
+}
+
+input {
+  border: 1px solid rgb(220, 220, 220);
+}
+
+button {
+  margin-left: 10px;
+}
+
+/* Set colors */
+.modal-title {
+  color: rgb(224, 17, 95);
+  width: 100%;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+.modal-content {
+  height: 35%;
+  width: 40%;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Modal.css or your styled-components file */
+
+.cancel,
+.save {
+  border-radius: 4px;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 5px 20px;
+}
+
+.cancel {
+  color: rgb(224, 17, 95);
+  background-color: white;
+  border: 1px solid rgb(224, 17, 95);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.cancel:hover {
+  background-color: rgb(224, 17, 95);
+  color: white;
+  transform: scale(1.05);
+  border: 1px solid rgb(224, 17, 95);
+}
+
+.save {
+  color: white;
+  background-color: rgb(107, 202, 226);
+  border: 1px solid rgb(107, 202, 226);
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.save:hover {
+  background-color: #51a5b9;
+  color: white;
+  border: 1px solid #51a5b9;
+  transform: scale(1.05);
+}
+
+.title-limit {
+  color: rgb(220, 220, 220);
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+}
+
+/* Modal.css or your styled-components file */
+
+.title-input-container {
+  position: relative;
+}
+
+.character-count {
+  color: rgb(170, 170, 170);
+  font-size: 10px;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  padding-right: 20px;
+}
