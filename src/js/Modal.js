@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../css/modal.css"; // Import the CSS file for styling
+import "../css/modal.css";
 
 const Modal = ({ closeModal }) => {
-  const [title, setTitle] = useState(""); // State for the title input
+  const [title, setTitle] = useState("");
 
   const handleTitleChange = (event) => {
     const inputValue = event.target.value;
@@ -30,7 +30,6 @@ const Modal = ({ closeModal }) => {
           />
         </div>
         <p className="character-count title-limit">{message}</p>{" "}
-        {/* Display the character count message */}
         <h2 className="modal-title">Journal Entry</h2>
         <textarea placeholder="Description"></textarea>
         <div className="modal-buttons">
