@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import "../css/journal.css";
-const Journal = () => {
+
+const Home = () => {
   const [blogs, setBlogs] = useState([
     {
       title: "My New Life as an Idol",
@@ -24,22 +24,16 @@ const Journal = () => {
   ]);
 
   return (
-    <div className="journal-container">
-      <div className="col-1">
-        <div className="home">
-          {blogs.map((blog) => (
-            <div className="blog-preview" key={blog.id}>
-              <h2>{blog.title}</h2>
-              <p>Written by {blog.author}</p>
-            </div>
-          ))}
-          ;
+    <div className="home">
+      {blogs.map((blog) => (
+        <div className="blog-preview" key={blog.id}>
+          <h2>{blog.title}</h2>
+          <p>Written by {blog.author}</p>
         </div>
-        );
-      </div>
-      <div className="col-2">Journal</div>
+      ))}
+      ;
     </div>
   );
 };
 
-export default Journal;
+export default Home;

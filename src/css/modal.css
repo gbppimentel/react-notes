@@ -86,7 +86,7 @@ button {
 
 .save {
   color: white;
-  background-color: rgb(107, 202, 226);
+  background-color: #6bcbe3;
   border: 1px solid rgb(107, 202, 226);
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
